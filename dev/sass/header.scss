@@ -1,11 +1,30 @@
-header, .home {
-	background-color: var(--bg-color-page);
+// header, .home {
+// 	background-color: $bg-color-page;
+// }
+
+// header {
+// 	.navbar {
+// 		a {
+// 			color: var(--bg-color-words);
+// 		}
+// 	}
+// } 
+
+.navbar {
+	.btn-tao-1 {
+		margin-top: 25px;
+		margin-right: 390px;
+	}
 }
 
-header {
-	.navbar {
+.navbar {
+	&-nav {
+		margin: 0 auto;
 		a {
-			color: var(--bg-color-words);
+			color: $bg-color-words;
+			&:hover {
+				color: $bg-color-stick;
+			}
 		}
 	}
-} 
+}
