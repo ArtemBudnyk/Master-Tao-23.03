@@ -1,3 +1,9 @@
 ::selection {
-    color: var(--bg-color-stick);
+    color: $bg-color-words;
+    background-color: $bg-color-stick;
+}
+
+body {
+    font-family: 'ProximaNova';
+    background-color: $bg-color-carts;
 }
