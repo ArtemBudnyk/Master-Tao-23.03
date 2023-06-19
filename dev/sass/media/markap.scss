@@ -1,5 +1,5 @@
 .page-markap {
-  background-color: rgb(41, 90, 125);
+  background-color: $bg-color-carts;
 }
 
 .row .block-1,
@@ -185,3 +185,24 @@ form label {
     top: 21px;
 }
 
+// ::selection {
+//     color: $bg-color-words;
+//     background-color: $bg-color-stick;
+// }
+
+// // h1, h2, h3, h4, h5, h6 {
+// //     
+// // }
+
+// body {
+//     font-family: 'ProximaNova';
+//     background-color: $bg-color-page;
+// }
+
+.waight {
+    li{
+        font-weight: 400;
+    }
+}
+
+//привет

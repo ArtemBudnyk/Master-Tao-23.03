@@ -20,7 +20,25 @@
     .navbar-toggler-icon {
         right: 636px;
     }
+
+    .collapse {
+        .navbar-nav {
+            flex-direction: column;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: -589px;
+            margin-top: 43px;
+            text-align: center;
+            .nav-item {
+                margin-top: 22px;
+                .nav-link {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
 }
+
 
 
 
