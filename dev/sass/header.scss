@@ -47,8 +47,7 @@ header {
 	display: flex;
 	justify-content: center;
 	max-width: 1140px;
-	height: 50px;
-	margin: 25px auto 100px;
+	margin: auto;
 	.logo {
 		width: 100%;
 		max-width: 172px;
@@ -75,8 +74,8 @@ header {
 			
 			.nav-link {
 				color: $bg-color-words;
-				// margin-left: -60px;
 				margin-right: 0px;
+				margin-left: -16px;
 			}
 		}
 	
@@ -84,23 +83,23 @@ header {
 	}
 }
 
-
-
 .collapse {
-	margin-left: 97px;
-	justify-content: space-between;
+	display: flex;
+    margin-top: 11px;
+	justify-content: space-around;
+	flex-direction: column;
 	width: 100%;
-
+	background-color: $bg-color-carts;
 	.btn-tao-1 {
-		margin-left: 50px;
-		margin-top: 17px;
+		margin-left: 91px;
+    	margin-top: 13px;
 	}
 }
 
 .navbar-toggler {
 	width: 40px;
 	height: 40px;
-	position: relative;
+ 	position: relative;
 	&:focus {
 		box-shadow: none; 
 	}
@@ -110,9 +109,15 @@ header {
 		height: 2.5px;
 		background-color: $bg-color-words;
 		position: absolute;
-		right: 636px;
-    	top: 17px;
+    	// top: -5px;
 		transition: .5s;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		box-shadow: none; 
+		border: none;
+		outline: none;
+		background-image: none;
 		&::after,
 		&::before {
 			content: "";
