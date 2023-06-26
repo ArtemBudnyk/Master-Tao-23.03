@@ -48,6 +48,7 @@ header {
 	justify-content: center;
 	max-width: 1140px;
 	margin: auto;
+	height: 50px;
 	.logo {
 		width: 100%;
 		max-width: 172px;
@@ -63,13 +64,15 @@ header {
 
 	.navbar {
 		width: 100%;
-		// justify-content: space-between;
+		margin-top: 36px;
 	}
 
 	 .navbar-nav {
 		max-width: 602px;
 		width: 100%;
 		justify-content: space-between;
+		padding-top: 29px;
+    	margin-right: 175px;
 		.nav-item {
 			
 			.nav-link {
@@ -83,16 +86,16 @@ header {
 	}
 }
 
-.collapse {
+.navbar-collapse {
 	display: flex;
-    margin-top: 11px;
+    margin-top: 55px;
 	justify-content: space-around;
 	flex-direction: column;
 	width: 100%;
-	background-color: $bg-color-carts;
 	.btn-tao-1 {
-		margin-left: 91px;
-    	margin-top: 13px;
+		// margin-left: 91px;
+    	// margin-top: 13px;
+		transform: translate(391px, -46px);
 	}
 }
 
@@ -113,7 +116,7 @@ header {
 		transition: .5s;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, 50%);
+		transform: translate(-44%, -50%);
 		box-shadow: none; 
 		border: none;
 		outline: none;
@@ -137,7 +140,6 @@ header {
 			bottom: -11px;
 		}
 	}
-
 	&[aria-expanded="false"] {
 
 	}
@@ -154,6 +156,7 @@ header {
 			}
 		}
 	}
+
 }
 
 

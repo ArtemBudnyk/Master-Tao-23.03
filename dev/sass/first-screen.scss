@@ -1,3 +1,50 @@
-// h1 {
-//     color: blue;
+.first-screen {
+    margin-top: 202px;
+    .sld{
+        width: 1820px;
+        height: 700px;
+        .first-screen-slider__title{
+            max-width: 475px;
+            color: $bg-color-words;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 126%;
+            text-transform: uppercase;
+        }
+        
+        .first-screen-slider__subtitle {
+            max-width: 3453px;
+            color: $bg-color-words;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 135.5%;
+            margin-bottom: 37px;    
+        }
+        
+        .btn-tao-2 {
+            margin-top: 10px;
+        }
+    }
+}
+
+.slick-prev {
+    background: none;
+    background: url(../assets/img/prev-arrow.svg);
+    width: 46px;
+    height: 46px;
+}
+
+// .slick-dots {
+//     display: flex;
+//     justify-content: center;
 // }
+
+// #slick-slide-control00,
+// #slick-slide-contro101,
+// #slick-slide-contro102 {
+//     display: none;
+// }
+
+.slick-dots li.slick-active button:before {
+    color: red;
+  }
