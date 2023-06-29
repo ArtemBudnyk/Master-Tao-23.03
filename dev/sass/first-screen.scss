@@ -1,50 +1,126 @@
 .first-screen {
-    margin-top: 202px;
-    .sld{
-        width: 1820px;
-        height: 700px;
-        .first-screen-slider__title{
-            max-width: 475px;
-            color: $bg-color-words;
-            font-weight: 700;
-            font-size: 56px;
-            line-height: 126%;
-            text-transform: uppercase;
-        }
-        
-        .first-screen-slider__subtitle {
-            max-width: 3453px;
-            color: $bg-color-words;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 135.5%;
-            margin-bottom: 37px;    
-        }
-        
-        .btn-tao-2 {
-            margin-top: 10px;
+    margin-top: 38px;
+    margin-left: -4px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .first-screen-slider {
+        max-width: 1820px;
+        width: 100%;
+        .container-xl {
+                max-width: 1920px;
+                min-height: 700px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                // flex-direction: column;
+            .sld{
+                // width: 1820px;
+                // height: 700px;
+                max-width: 1140px;
+                max-height: 310px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-bottom: 60px;
+                .first-screen-slider__title{
+                    max-width: 475px;
+                    color: $bg-color-words;
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 126%;
+                    text-transform: uppercase;
+                    margin-left: -10px;
+                    margin-bottom: 8px;
+                    // margin: 164px auto 8px 327px; без флекса
+                    // margin: 164px 0 8px 76px
+                }
+                
+                .first-screen-slider__subtitle {
+                    max-width: 345px;
+                    color: $bg-color-words;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 135.5%;
+                    margin-bottom: 35px; 
+                    margin-left: -10px;
+                    // margin: 0 auto 0 327px;   без флекса
+                    // margin: 0 0 8px 76px
+                }
+                
+                .btn-tao-2 {
+                    margin-left: -10px;
+                    // margin: 37px auto 0px 328px;  без флекса
+                    // margin: 28px 0 8px 76px
+                }
+            }
         }
     }
 }
 
-.slick-prev {
-    background: none;
-    background: url(../assets/img/prev-arrow.svg);
-    width: 46px;
-    height: 46px;
+.first-screen-slider__arrows {
+    position: absolute;
+    max-width: 1523px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-// .slick-dots {
-//     display: flex;
-//     justify-content: center;
-// }
+.slick-prev,
+.slick-next {
+    background: none;
+    background: url(assets/img/prev-arrow.svg);
+    width: 46px;
+    height: 46px;
+    border: none;
+    font-size: 0;
+    margin-left: 57px;
+}
 
-// #slick-slide-control00,
-// #slick-slide-contro101,
-// #slick-slide-contro102 {
-//     display: none;
-// }
+.slick-next {
+    background: url(assets/img/nexxt-arrow.svg);
+    margin-right: 57px;
+}
 
-.slick-dots li.slick-active button:before {
-    color: red;
-  }
+.slick-dots {
+    display: flex;
+    list-style-type: none;
+    font-size: 0;
+    position: absolute;
+    left: 47%;
+    max-width: 110px;
+    bottom: 4%;
+    #slick-slide-control00,
+    #slick-slide-control01,
+    #slick-slide-control02,
+    #slick-slide-control03{
+        padding: 0;
+        width: 8px;
+        height: 8px;
+        border: none;
+        border-radius: 50%;
+        background: none;
+        border: 2px solid $bg-color-words;
+        margin-right: 26px;
+    }
+}
+
+.slick-active {
+    background-color: $bg-color-words;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-right: 26px;
+}
+
+.slick-list {
+    .slick-track {
+        min-width: 700px;
+        width: 100%;
+    }
+
+}

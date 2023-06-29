@@ -1,13 +1,15 @@
    $(document).ready(function(){
       $('.first-screen-slider').slick({
         dots: true,
-        appendArrows:'.first-screen-slider__arrows'
+        Infinity: true,
+        appendArrows:'.first-screen-slider__arrows',
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+            }
+          },
+        ]
       });
 });
-
-// $(document).ready(function() {
-//     $('.slider').slick();
-//     $('.slider').slick('slick-dots', {
-//       container: '.slider-dots',
-//     });
-//   });

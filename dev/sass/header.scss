@@ -49,13 +49,10 @@ header {
 	justify-content: space-between;
 }
 
-.navbarSupportedContent {
-	max-width: 880px;
-}
-
 .navbar-collapse {
 	display: flex;
 	justify-content: space-between;
+	max-width: 880px;
 	.btn-tao-1 {
 		margin-bottom: 0;
 	}

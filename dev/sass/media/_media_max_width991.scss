@@ -30,7 +30,9 @@
     .navbar-collapse {
         background-color: $bg-color-carts;
         margin-top: 11px;
-        display: block;
+        // display: block;
+        flex-direction: column;
+        max-width: 992px;
         .navbar-nav {
             flex-direction: column;
             justify-content: center;
@@ -47,9 +49,9 @@
 
         .btn-tao-1 {
             width: 295px;
-            height: 68px;
+            min-height: 68px;
             margin-top: 62px;
-            margin-left: 40px;
+            margin-left: 15px;
             margin-bottom: 60px;
         }
     }
