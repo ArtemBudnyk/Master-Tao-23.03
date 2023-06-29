@@ -1,14 +1,11 @@
-@media screen and (max-width: 991.999px) {
+@media screen and (max-width: 991px) {
 
     header {
         margin-top: 4px;
         padding-top: 10px;
         .navbar {
-            // padding-top: 18px;
-            // padding-bottom: 18px;
             margin-top: 3px;
             .navbar-brand {
-                // margin-top: -27px;
                 margin-left: 20px;
                 img {
                     width: 126px;
@@ -30,7 +27,6 @@
     .navbar-collapse {
         background-color: $bg-color-carts;
         margin-top: 11px;
-        // display: block;
         flex-direction: column;
         max-width: 992px;
         .navbar-nav {
@@ -55,8 +51,55 @@
             margin-bottom: 60px;
         }
     }
+
+
+    // slider
+    
+    .first-screen {
+        .first-screen-slider {
+            height: 100vh;
+            .container-xl {
+                min-height: calc(100vh - 91px);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-color: #0000008a;
+                }
+                .sld {
+                    max-width: 1160px;
+                    margin-bottom: 140px;
+                    margin-left: 13px;
+                    align-items: center;
+                    z-index: 1;
+                    .first-screen-slider__title{
+                        max-width: 297px;
+                        font-size: 32px;
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
+                    .first-screen-slider__subtitle {
+                        max-width: 276px;
+                        font-size: 16px;
+                        text-align: center;
+                        margin-bottom: 18px;  
+                    }
+                }
+            }
+        } 
+    }
+
+    .slick-dots {
+        left: calc(50% - 77px);
+        bottom: 15%;
+    }
 }
-
-
-
 

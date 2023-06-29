@@ -1,3 +1,11 @@
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
+    
+    section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 
+    .container-xl {
+        border-radius: 20px;
+    }
 }
