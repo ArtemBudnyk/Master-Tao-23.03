@@ -1,3 +1,5 @@
+// 3. как стилизовать чекбоксы...
+
 ::selection {
     color: $bg-color-words;
     background-color: $bg-color-green;
@@ -10,11 +12,74 @@ body {
 }
 
 .btn-tao-1:hover,
-.btn-tao-2:hover {
+.btn-tao-2:hover,
+.btn-tao-3:hover {
     background-color: $bg-color-green;
 }
 
-a .nav-link:hover {
-    color: $bg-color-green;
+header{
+    .navbar-nav {
+        .nav-item {
+            .nav-link:hover {
+                color: $bg-color-green;
+            }
+        }
+    }
+}
+    
+
+h1, h2, h3, h4, h5, h6 {
+    color: $bg-color-words;
 }
 
+.text-left,
+.col-md-7 {
+    text-align: left;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.input-row {
+    display: flex;
+}
+
+.col-md-7 {
+    margin-bottom: 35px;
+    h2 {
+        &::after {
+            content: "";
+            position: static;
+            display: inline-block;
+            width: 85px;
+            height: 2px;
+            margin: 10px 10px 10px 19px;
+            background-color: $bg-color-green;
+        }
+    }
+}
+
+.input-box {
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    input {
+        border-radius: 10px;
+        padding: 16px 10px;
+        border: none;
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    label {
+        // font-weight: 600; так было
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 126%;
+        margin-bottom: 6px;
+    }
+}

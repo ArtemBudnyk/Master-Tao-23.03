@@ -1,0 +1,106 @@
+
+
+.template-title {
+    position: relative;
+    text-align: center;
+    padding-bottom: 18px;
+    margin-bottom: 35px;
+}
+
+// .template-title::after {
+//     content: "";
+//     position: absolute;
+//     left: 50%;
+//     top: calc(100% - 2px);
+//     transform: translate(-50%, 0);
+//     width: 85px;
+//     height: 2px;
+//     background-color: $bg-color-green;
+// }
+
+// для нижнего подчеркивания
+
+
+.calculation-form {
+    max-width: 626px;
+    width: 100%;
+    background-color: $bg-color-carts;
+    border-radius: 20px;
+    padding: 49px 36px 61px;
+    margin-left: 90px;
+    .input-box {
+        margin: 0 15px 20px;
+        max-width: 248px;
+        width: 100%;
+    }
+
+    .inp-file{
+        max-width: 526px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.input-column {
+    .checkbox-mar {
+        margin-top: 20px;
+        margin-bottom: -11px;
+    }
+
+}
+
+#insurance,
+#decor {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid $bg-color-carts;
+    background: $bg-color-words;
+}
+
+#lbl-insurance,
+#lbl-decor {
+    margin-left: 35px;
+    height: 19px;
+    display: flex;
+    margin-top: -20px;
+}
+
+[type="file"] {
+    display: none;
+}
+
+label[for="myfile"] {
+    max-width: 526px;
+    width: 100%;
+    text-align: center;
+    border: 2px dashed rgba(255, 255, 255, 0.26);
+    border-radius: 10px;
+    padding: 11px;
+    font-size: 15px;
+    line-height: 126%;
+    transition: .2s;
+}
+
+label[for="myfile"]:hover {
+    border: 2px dashed $bg-color-green;
+}
+
+.template-title h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 124.5%;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.template-title h2::after {
+    content: "";
+    display: inline-block;
+    width: 85px;
+    height: 2px;
+    background-color: $bg-color-green;
+    margin: 0 20px 10px 20px;
+}
+

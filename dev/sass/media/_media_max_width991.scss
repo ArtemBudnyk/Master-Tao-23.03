@@ -1,12 +1,15 @@
 @media screen and (max-width: 991px) {
 
+    // header
+    
     header {
         margin-top: 4px;
         padding-top: 10px;
         .navbar {
             margin-top: 3px;
+            padding: 0 15px;
             .navbar-brand {
-                margin-left: 20px;
+                margin-left: 4px;
                 img {
                     width: 126px;
                     height: 35px;
@@ -56,6 +59,7 @@
     // slider
     
     .first-screen {
+        margin-top: 15px;
         .first-screen-slider {
             height: 100vh;
             .container-xl {
@@ -75,22 +79,26 @@
                 }
                 .sld {
                     max-width: 1160px;
-                    margin-bottom: 140px;
-                    margin-left: 13px;
+                    width: 100%;
+                    margin-left: 3px;
                     align-items: center;
                     z-index: 1;
+                    margin-bottom: -50px;
                     .first-screen-slider__title{
                         max-width: 297px;
                         font-size: 32px;
                         text-align: center;
-                        margin-bottom: 10px;
                     }
 
                     .first-screen-slider__subtitle {
                         max-width: 276px;
                         font-size: 16px;
                         text-align: center;
-                        margin-bottom: 18px;  
+                        margin-bottom: 18px;
+                    }
+
+                    .btn-tao-2 {
+                        margin-bottom: 54px;
                     }
                 }
             }
@@ -98,7 +106,7 @@
     }
 
     .slick-dots {
-        left: calc(50% - 77px);
+        left: calc(50% - 85px);
         bottom: 15%;
     }
 }

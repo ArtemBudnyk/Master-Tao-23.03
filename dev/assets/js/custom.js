@@ -13,3 +13,10 @@
         ]
       });
 });
+
+
+const checkbox = document.querySelectorAll('[type="checkbox"]');
+console.log(checkbox);
+checkbox.forEach(item => {
+  item.closest('.input-box').classList.add('checkbox-mar');
+})

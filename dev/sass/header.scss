@@ -32,9 +32,8 @@ header {
 		justify-content: space-between;
 		.nav-item {
 			margin: 0;
-			// margin-left: 72px;
-    		// margin-right: -88px;
 			white-space: nowrap;
+			font-weight: 100;
 
 			.nav-link {
 				color: $bg-color-words;
@@ -62,6 +61,7 @@ header {
 	width: 40px;
 	height: 40px;
 	position: relative;
+	border: none;
 	&:focus {
 		box-shadow: none;
 	}
@@ -74,7 +74,7 @@ header {
 		// top: -5px;
 		transition: 0.5s;
 		top: 50%;
-		left: 50%;
+		left: 46%;
 		transform: translate(-44%, -50%);
 		box-shadow: none;
 		border: none;
