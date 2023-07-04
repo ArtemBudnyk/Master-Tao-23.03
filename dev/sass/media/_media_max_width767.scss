@@ -1,3 +1,53 @@
 @media screen and (max-width: 767px) {
 
+    // form
+    .calculation {
+        .calculation-form {
+            margin-left: 0px;
+            padding: 55px 15px 45px;
+            .input-box {
+                max-width: 750px;
+                padding-right: 30px;
+            }
+
+            .input-column {
+                .checkbox-mar {
+                    margin-top: 5px;
+                    margin-bottom: 11px;
+                }
+            }
+
+            #kod {
+                margin-bottom: 3px
+            }
+
+            .btn-tao-3 {
+                width: 277px;
+            }
+        }
+
+        .template-title {
+            margin-bottom: 55px;
+        }
+
+        .template-title h2 {
+            font-size: 24px;
+            max-width: 335px;
+            width: 100%;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 44%;
+                top: calc(100% - -1px);
+                transform: translate(-50%, 0);
+                width: 85px;
+                height: 2px;
+                background-color: $bg-color-green;
+            }
+        }
+
+        .input-row {
+         flex-direction: column;
+        }
+    }   
 }

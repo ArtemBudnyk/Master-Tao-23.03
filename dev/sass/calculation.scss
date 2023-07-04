@@ -20,87 +20,122 @@
 
 // для нижнего подчеркивания
 
+.calculation {
+    margin-bottom: 113px;
+    .container {
+        position: relative;
+    }
 
-.calculation-form {
-    max-width: 626px;
-    width: 100%;
-    background-color: $bg-color-carts;
-    border-radius: 20px;
-    padding: 49px 36px 61px;
-    margin-left: 90px;
-    .input-box {
-        margin: 0 15px 20px;
-        max-width: 248px;
+    .calculation-form {
+        max-width: 626px;
         width: 100%;
+        background-color: $bg-color-carts;
+        border-radius: 20px;
+        padding: 49px 36px 45px;
+        margin-left: 90px;
+        .input-box {
+            margin: 0 15px 20px;
+            max-width: 248px;
+            width: 100%;
+        }
+    
+        .inp-file{
+            max-width: 526px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .input-column {
+            .checkbox-mar {
+                margin-top: 20px;
+                margin-bottom: -11px;
+            }
+        
+        }
+        
+        #insurance,
+        #decor {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            border-radius: 4px;
+            border: 1px solid $bg-color-carts;
+            background: $bg-color-words;
+        }
+        
+        #lbl-insurance,
+        #lbl-decor {
+            margin-left: 35px;
+            height: 19px;
+            display: flex;
+            margin-top: -20px;
+        }
+        
+        #kod {
+            margin-bottom: 14px;
+        }
+        
+        .doc {
+            margin-bottom: 11px;
+            display: flex;
+            max-width: 340px;
+            width: 100%;
+            font-size: 15px;
+            font-weight: 100;
+            line-height: 126%;
+        }
+        
+        [type="file"] {
+            display: none;
+        }
+        
+        label[for="myfile"] {
+            max-width: 526px;
+            width: 100%;
+            text-align: center;
+            border: 2px dashed rgba(255, 255, 255, 0.26);
+            border-radius: 10px;
+            padding: 11px;
+            font-size: 15px;
+            line-height: 126%;
+            transition: .2s;
+            &:hover {
+                color: $bg-color-green;
+                border: 2px dashed $bg-color-green;
+            }
+        }
+    }
+    
+    
+    .template-title h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 124.5%;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+    
+    .template-title h2::after {
+        content: "";
+        display: inline-block;
+        width: 85px;
+        height: 2px;
+        background-color: $bg-color-green;
+        margin: 0 20px 10px 20px;
     }
 
-    .inp-file{
-        max-width: 526px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .calculation__img-box {
+        position: absolute;
+        bottom: -115px;
+        right: 57px;
+        .calculation-img {
+            max-width: 560px;
+            width: 35vw;
+        }
     }
 }
-.input-column {
-    .checkbox-mar {
-        margin-top: 20px;
-        margin-bottom: -11px;
-    }
 
-}
 
-#insurance,
-#decor {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 1px solid $bg-color-carts;
-    background: $bg-color-words;
-}
 
-#lbl-insurance,
-#lbl-decor {
-    margin-left: 35px;
-    height: 19px;
-    display: flex;
-    margin-top: -20px;
-}
-
-[type="file"] {
-    display: none;
-}
-
-label[for="myfile"] {
-    max-width: 526px;
-    width: 100%;
-    text-align: center;
-    border: 2px dashed rgba(255, 255, 255, 0.26);
-    border-radius: 10px;
-    padding: 11px;
-    font-size: 15px;
-    line-height: 126%;
-    transition: .2s;
-}
-
-label[for="myfile"]:hover {
-    border: 2px dashed $bg-color-green;
-}
-
-.template-title h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 124.5%;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-}
-
-.template-title h2::after {
-    content: "";
-    display: inline-block;
-    width: 85px;
-    height: 2px;
-    background-color: $bg-color-green;
-    margin: 0 20px 10px 20px;
-}
 

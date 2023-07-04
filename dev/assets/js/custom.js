@@ -20,3 +20,8 @@ console.log(checkbox);
 checkbox.forEach(item => {
   item.closest('.input-box').classList.add('checkbox-mar');
 })
+
+document.getElementById('myfile').onchange = function () {
+  document.getElementById('file-name').innerHTML = this.value;
+}
+
