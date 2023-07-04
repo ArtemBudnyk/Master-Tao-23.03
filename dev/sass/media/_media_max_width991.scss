@@ -18,9 +18,9 @@
         padding-top: 10px;
         .navbar {
             margin-top: 3px;
-            padding: 0 15px;
+            padding: 0;//
             .navbar-brand {
-                margin-left: 4px;
+                margin-left: 19px;
                 img {
                     width: 126px;
                     height: 35px;
@@ -36,6 +36,7 @@
 
     .navbar-toggler {
         display: flex;
+        margin-right: 14px;
     }
 
     .navbar-collapse {
@@ -43,6 +44,7 @@
         margin-top: 11px;
         flex-direction: column;
         max-width: 992px;
+        margin-left: -15px;
         .navbar-nav {
             flex-direction: column;
             justify-content: center;

@@ -82,5 +82,9 @@ h3 {
         font-size: 15px;
         line-height: 126%;
         margin-bottom: 6px;
+        &:hover {
+            color: $bg-color-green;
+        }
     }
 }
+
