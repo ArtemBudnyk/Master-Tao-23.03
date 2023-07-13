@@ -21,6 +21,15 @@
         }
     }
   }
+
+  
+  // advantages
+
+    .advantages {
+        .row {
+            margin-left: 0;
+        }
+    }
 }
 
 
@@ -47,4 +56,15 @@
         }
     }
   }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .calculation {
+        .calculation__img-box {
+            .calculation-img {
+                width: 20vw;
+            }
+        }
+    }    
 }

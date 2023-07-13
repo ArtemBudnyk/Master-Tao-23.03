@@ -1,9 +1,11 @@
 .first-screen {
     margin-top: 38px;
     margin-left: -4px;
-    margin-bottom: 97px;
+    margin-bottom: 94px;
     display: flex;
     justify-content: center;
+    max-width: 6000px;            // начало тут сделал чтоб при маштабировании не разбегались блоки
+    width: 100%;                  // конец
     position: relative;
     .first-screen-slider {
         max-width: 1820px;

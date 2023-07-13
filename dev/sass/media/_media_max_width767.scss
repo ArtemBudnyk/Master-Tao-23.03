@@ -4,7 +4,7 @@
     .calculation {
         .calculation-form {
             margin-left: 0px;
-            padding: 55px 15px 45px;
+            padding: 48px 15px 0px;
             .input-box {
                 max-width: 750px;
                 padding-right: 30px;
@@ -17,17 +17,28 @@
                 }
             }
 
+            .row-1 {
+                margin-bottom: 10px;
+            }
+
+            .prise__label {
+                margin-top: 8px;
+            }
+
             #kod {
-                margin-bottom: 3px
+                margin-bottom: 12px
             }
 
             .btn-tao-3 {
                 width: 277px;
+                margin-bottom: 20px;
             }
         }
 
         .template-title {
             margin-bottom: 55px;
+            display: flex;
+            justify-content: center;
         }
 
         .template-title h2 {
@@ -38,7 +49,7 @@
                 content: "";
                 position: absolute;
                 left: 44%;
-                top: calc(100% - -1px);
+                top: calc(100% + 0px);
                 transform: translate(-50%, 0);
                 width: 85px;
                 height: 2px;

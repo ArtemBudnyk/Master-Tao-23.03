@@ -1,3 +1,19 @@
 @media screen and (max-width: 575px) {
-    
+    .advantages {
+        .container {
+            .template-title-2  {
+                width: 387px;
+                margin-left: -52Spx;
+                margin-bottom: 65px;
+                h2 {    
+                    font-size: 24px;
+                    font-weight: 700;                    
+                }
+            }
+
+            .row {
+                margin-top: -15px;
+            }
+        }
+    }
 }

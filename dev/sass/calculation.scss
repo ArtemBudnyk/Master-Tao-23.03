@@ -1,10 +1,22 @@
 
 
-.template-title {
+.template-title,
+.template-title-2 {
     position: relative;
     text-align: center;
     padding-bottom: 18px;
     margin-bottom: 35px;
+}
+
+.template-title-2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: calc(100% - 7px);
+    transform: translate(-50%, 0);
+    width: 85px;
+    height: 2px;
+    background-color: $bg-color-btn;
 }
 
 // .template-title::after {
@@ -21,11 +33,14 @@
 // для нижнего подчеркивания
 
 .calculation {
+    max-width: 6000px;            // начало тут сделал чтоб при маштабировании не разбегались блоки
+    width: 100%;                   
+    display: flex; 
+    justify-content: center;     // конец
     margin-bottom: 113px;
     .container {
         position: relative;
     }
-
     .calculation-form {
         max-width: 626px;
         width: 100%;
@@ -34,11 +49,20 @@
         padding: 49px 35px 45px;
         margin-left: 93px;
         .input-box {
-            margin: 0 15px 20px;
+            margin: 0 15px 16px;
             max-width: 248px;
             width: 100%;
         }
+
+        .row-1 {
+            margin-top: 8px;
+        }
     
+
+        #category {
+            margin-top: 0;
+        }
+
         .inp-file{
             max-width: 526px;
             width: 100%;
@@ -49,7 +73,7 @@
         .input-column {
             .checkbox-mar {
                 margin-top: 20px;
-                margin-bottom: -6px;
+                margin-bottom: -4px;
                 position: relative;
             }
 
@@ -170,7 +194,7 @@
         // }
         
         #kod {
-            margin-bottom: 14px;
+            margin-bottom: 30px;
         }
         
         .doc {
@@ -201,6 +225,10 @@
                 color: $bg-color-green;
                 border: 2px dashed $bg-color-green;
             }
+        }
+
+        .btn-tao-3 {
+            margin-bottom: 0;
         }
     }
     

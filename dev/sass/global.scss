@@ -12,6 +12,32 @@ body {
     color: $bg-color-words;
 }
 
+// section {
+//     min-width: 1820px;
+// }
+
+section {
+    max-width: 1920px; //если со слайдером трабл то из за этого
+}
+
+
+    .container-fluid {
+        padding: 90px 85px 100px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 42px;
+            right: 42px;
+            top: 0;
+            height: 100%;
+            background: $bg-color-carts;
+            border-radius: 20px;
+            z-index: -1;
+        }
+    }
+
+
 .btn-tao-1:hover,
 .btn-tao-2:hover,
 .btn-tao-3:hover {

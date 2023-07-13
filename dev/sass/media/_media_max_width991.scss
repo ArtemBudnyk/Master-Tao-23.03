@@ -1,12 +1,12 @@
-@media screen and (max-width: 1100px) {
-    .calculation {
-        .calculation__img-box {
-            .calculation-img {
-                width: 20vw;
-            }
-        }
-    }    
-}
+// @media screen and (max-width: 1100px) {
+//     .calculation {
+//         .calculation__img-box {
+//             .calculation-img {
+//                 width: 20vw;
+//             }
+//         }
+//     }    
+// }
 
 
 @media screen and (max-width: 991px) {
@@ -73,11 +73,12 @@
     
     .first-screen {
         margin-top: 15px;
+        margin-bottom: 55px;
         .first-screen-slider {
-            height: 100vh;
+            // height: 100vh;
             .container-xl {
-                min-height: calc(100vh - 91px);
-                // min-height: calc(122vh - 91px);
+                min-height: calc(100vh - 72px);
+                // min-height: calc(100vh - 91px);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -97,8 +98,8 @@
                     margin-left: 3px;
                     align-items: center;
                     z-index: 1;
-                    margin-bottom: -135px;
-                    // margin-bottom: 0;
+                    // margin-bottom: -135px;
+                    margin-bottom: 0;
                     .first-screen-slider__title{
                         max-width: 297px;
                         font-size: 32px;
@@ -122,7 +123,7 @@
 
     .slick-dots {
         left: calc(50% - 85px);
-        bottom: 15%;
+        bottom: 4%;
         // bottom: -3%;
     }
 
@@ -137,5 +138,58 @@
            display: none;
         }
     }   
+    
+    .container-fluid {
+        padding: 55px 28px 60px;
+        position: relative;
+        &::before {
+            content: ""; //help
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -55px;
+            border-radius: 0;
+        }
+    }
+
+    section .container-fluid > .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .advantages {
+        .container {
+            .template-title-2  {
+                margin-top: -61px;
+                &::after {
+                    top: calc(100% - -2px);
+                }
+
+                h2 {    
+                    font-size: 24px;
+                    font-weight: 700;                   
+                }
+            }
+
+            .row {
+                margin-top: -15px; // 20px
+                .slick-dots {
+                    left: calc(50% - 135px);
+                    bottom: 2%;
+                }
+            }
+
+            .advantage {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .advantage__img-box {
+                margin: 10px auto 35px;
+            }
+        }
+    }
 }
 
