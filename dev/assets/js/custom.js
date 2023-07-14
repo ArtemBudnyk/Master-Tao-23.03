@@ -1,4 +1,7 @@
-   $(document).ready(function(){
+
+// first screen slider 
+
+$(document).ready(function(){
       $('.first-screen-slider').slick({
         dots: true,
         Infinity: true,
@@ -15,6 +18,8 @@
 });
 
 
+// form
+
 const checkbox = document.querySelectorAll('[type="checkbox"]');
 console.log(checkbox);
 checkbox.forEach(item => {
@@ -27,7 +32,6 @@ document.getElementById('myfile').onchange = function () {
 
 
 // advantage
-
 
 mobileOnlySlider(".advantages-slider", true, false, 991);
 
@@ -56,3 +60,36 @@ function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
     }
   });
 } // Mobile Only Slider
+
+
+//delivery
+
+$('.slider-template').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        dots: true,
+        arrows: false,
+      }
+    },
+  ]
+});

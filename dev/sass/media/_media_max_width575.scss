@@ -1,9 +1,10 @@
 @media screen and (max-width: 575px) {
     .advantages {
+        margin-bottom: 27px;
         .container {
             .template-title-2  {
                 width: 387px;
-                margin-left: -52Spx;
+                margin-left: -55px;
                 margin-bottom: 65px;
                 h2 {    
                     font-size: 24px;
@@ -13,6 +14,36 @@
 
             .row {
                 margin-top: -15px;
+            }
+        }
+    }
+
+
+    // delivery 
+
+    .delivery {
+        .template-title-3 {
+            margin-bottom: 30px;
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        .slide-box {
+            max-width: 335px;
+            .slide-btn {
+                .btnn {
+                    padding: 0px;
+                    width: 138px;
+                }
+            }
+        }
+
+        .slider-template {
+            margin: 0 -46px;
+            .slick-dots {
+                left: calc(50% - 100px);
+                bottom: -11%;
             }
         }
     }
