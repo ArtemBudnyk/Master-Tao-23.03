@@ -66,11 +66,20 @@
     border: none;
     font-size: 0;
     margin-left: 65px;
+    &:hover {
+        background-image: url(assets/img/arrow-hover.svg);
+        background-repeat: no-repeat;
+        margin-left: 75px;
+    }
 }
 
 .slick-next {
     background: url(assets/img/nexxt-arrow.svg);
     margin-right: 65px;
+    &:hover {
+        transform: rotate(180deg);
+        margin-right:75px;
+    }
 }
 
 .slick-dots {
