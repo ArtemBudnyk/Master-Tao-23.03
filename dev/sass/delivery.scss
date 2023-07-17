@@ -28,26 +28,22 @@
     // margin: -10px 32px;
     // max-width: 1220px;
 }
-// .slick-slide {
-//     width: 380px;
-// display: flex;
-// margin-left: 30px;
-// }
+
 .slick-prev {
     position: absolute;
-    right: calc(97% + 10px);
+    right: calc(97% + 103px);
     top: 47%;
     &:hover {
-        right: calc(97% + 0px);
+        right: calc(97% + 93px);
     }
 }
 
 .slick-next {
     position: absolute;
-    left: calc(97% - 15px);
+    left: calc(97% + 53px);
     top: 47%;
     &:hover {
-        left: calc(97% - 35px);
+        left: calc(97% + 43px);
     }
 }
 
