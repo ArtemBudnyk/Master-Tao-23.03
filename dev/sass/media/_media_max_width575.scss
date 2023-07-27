@@ -1,6 +1,6 @@
 @media screen and (max-width: 575px) {
     .advantages {
-        margin-bottom: 27px;
+        margin-bottom: 33px;
         .container {
             .template-title-2  {
                 width: 387px;
@@ -22,6 +22,11 @@
     // delivery 
 
     .delivery {
+        margin-bottom: 153px;
+        .container {
+            max-width: 360px;  // решение слайд прилипает к левой стороне
+        }
+
         .template-title-3 {
             margin-bottom: 30px;
             h2 {
@@ -40,11 +45,102 @@
         }
 
         .slider-template {
-            margin: 0 -46px;
+            margin: 0 -17px;
             .slick-dots {
                 left: calc(50% - 100px);
                 bottom: -11%;
             }
         }
+
+
     }
+
+    // services
+
+    .services {
+        padding: 0;
+        .container {
+            max-width: 360px;
+
+            .template-title-2 {
+                margin-bottom: 35px;
+                h2 {
+                    font-size: 24px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .slide-box {
+            max-width: 335px;
+            .slide-title {
+                font-size: 22px;
+            }
+
+            .slide-description {
+                font-size: 14px;
+            }
+        }
+
+        .slick-dots {
+            left: calc(50% - 90px);
+            bottom: -8%;
+        }
+
+    }
+
+    .services  {
+        &::before {
+            height: 726px;
+        }
+    }
+
+    // about-company 
+
+    .about-company {
+        max-width: 575px;
+    }
+
+    .row-company {
+        flex-direction: column;
+        max-width: 345px;
+        padding: 0;
+        .template-title-3 {
+            margin-top: 55px;
+            &::after {
+                left: 50%;
+            }
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        .template-title__description {
+            font-size: 15px;
+            font-weight: 100;
+            line-height: 165.5%;
+            .text {
+                max-width: 335px;
+                width: 100%;
+                margin-top: -16px;
+                margin-left: 7px;
+            }
+
+            .text-2 {
+                margin-bottom: 40px;
+                margin-top: 0;
+            }
+        }
+
+        .col {
+            img {
+                max-width: 277px;
+                width: 100%;
+                padding: 0;
+                padding-left: 20px;
+            }
+        }
+    }
+
+
+
 }

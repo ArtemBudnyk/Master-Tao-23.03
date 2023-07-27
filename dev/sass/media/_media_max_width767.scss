@@ -60,5 +60,31 @@
         .input-row {
          flex-direction: column;
         }
-    }   
+    }  
+
+    
+    // services
+
+    .services {
+        .container {
+
+            .template-title-2 {
+                h2 {
+                    font-size: 24px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .slide-box {
+            max-width: 335px;
+            .slide-title {
+                font-size: 22px;
+            }
+
+            .slide-description {
+                font-size: 14px;
+            }
+        }
+    }
+
 }

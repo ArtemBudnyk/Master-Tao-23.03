@@ -1,15 +1,5 @@
-// @media screen and (max-width: 1100px) {
-//     .calculation {
-//         .calculation__img-box {
-//             .calculation-img {
-//                 width: 20vw;
-//             }
-//         }
-//     }    
-// }
 
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.999px) {
 
     // header
 
@@ -208,6 +198,44 @@
         }
     }
 
-   
+    // services
+
+    .services {
+  
+        .slider-template {
+            max-width: 420px;
+        }
+    }
+
+    .services  {
+        &::before {
+            height: 794px;
+        }
+    }
+
+   // about-company 
+
+    .about-company {
+        max-width: 991px;
+    }
+
+   .row-company {
+    flex-direction: column;
+    max-width: 700px;
+    .template-title-3 {
+        text-align: center;
+        &::after {
+            left: 50%;
+        }
+    }
+
+    .template-title__description {
+        .text-2 {
+            margin-bottom: 40px;
+        }
+    }
+
+   }
+
 }
 

@@ -1,0 +1,82 @@
+.services {
+    margin-bottom: 100px;
+    max-width: 1910px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .container {
+        max-width: 1240px;
+        .template-title-2 {
+            margin-bottom: 53px;
+            h2 {
+                font-size: 36px;
+                margin-right: 0px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .slick-prev {
+        position: absolute;
+        right: calc(97% + 43px);
+        top: 45%;
+        background-image: url(assets/img/arrows-delivery.svg);
+        background-repeat: no-repeat;
+        &:hover {
+            background-image: url(assets/img/arrow-hover.svg);
+            background-repeat: no-repeat;
+            right: calc(97% + 40px);
+        }
+    }
+    
+    .slick-next {
+        position: absolute;
+        left: calc(97% + -8px);
+        top: 44%;
+        background-image: url(assets/img/arrows-delivery.svg);
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        &:hover {
+            background-image: url(assets/img/arrow-hover.svg);
+            background-repeat: no-repeat;
+            left: calc(97% - 18px);
+        }
+    }
+
+    .slide-box {
+        &::before {
+            content: '';
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0.00) 100%);
+        }
+        
+        .slide-title,
+        .slide-decription,
+        .slide-btn {
+            z-index: 2;
+        }
+
+        .slide-title {
+            text-align: left;
+            margin-left: 15px;
+            // margin-top: -10px;
+            margin-top: 250px;
+        }
+
+        .slide-decription {
+            text-align: left;
+            margin-left: 15px;
+            font-size: 15px;
+            font-weight: 100;
+        }
+
+        .slide-btn {
+            justify-content: start;
+        }
+    }
+}

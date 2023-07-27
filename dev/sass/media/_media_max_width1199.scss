@@ -49,6 +49,24 @@
         }
     }
   }
+
+  // services
+
+    .services{
+
+        .slider-template {
+            max-width: 749px;
+            margin: 0 auto;
+        }
+
+        .slide-box {
+            .slide-btn {
+                .btn-tao-1 {
+                    padding: 8px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -66,7 +84,8 @@
         }
     }
 
-     // form
+
+    // form
 
   .calculation {
     .calculation__img-box {
@@ -75,6 +94,7 @@
         }
     }
   }
+
 }
 
 
