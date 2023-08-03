@@ -11,8 +11,111 @@ body {
     color: $bg-color-words;
 }
 
+.advantages, .services, .faq {
+    .template-title {
+        position: relative;
+        text-align: center;
+        padding-bottom: 18px;
+        margin-bottom: 35px;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: calc(100% - 7px);
+            transform: translate(-50%, 0);
+            width: 85px;
+            height: 2px;
+            background-color: $bg-color-btn;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 124.5%;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+    } 
+}
+
+.delivery, .about-company {
+    .template-title {
+        position: relative;
+        text-align: center;
+        padding-bottom: 18px;
+        margin-bottom: 35px;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: calc(100% - 5px);
+            transform: translate(-50%, 0);
+            width: 85px;
+            height: 2px;
+            background-color: $bg-color-green;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 124.5%;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+    } 
+}
+
+
 // section {
 //     min-width: 1820px;
+// }
+
+// .template-titlle:nth-child(even) {
+//     position: relative;
+//     text-align: center;
+//     padding-bottom: 18px;
+//     margin-bottom: 35px;
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         left: 50%;
+//         top: calc(100% - 7px);
+//         transform: translate(-50%, 0);
+//         width: 85px;
+//         height: 2px;
+//         background-color: $bg-color-btn;
+//     }
+//     h2 {
+//         font-weight: 700;
+//         font-size: 36px;
+//         line-height: 124.5%;
+//         text-transform: uppercase;
+//         margin-bottom: 6px;
+//     }
+// }
+
+// .template-titlle:nth-child(odd) {
+//     position: relative;
+//     text-align: center;
+//     padding-bottom: 18px;
+//     margin-bottom: 35px;
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         left: 50%;
+//         top: calc(100% - 5px);
+//         transform: translate(-50%, 0);
+//         width: 85px;
+//         height: 2px;
+//         background-color: $bg-color-green;
+//     }
+//     h2 {
+//         font-weight: 700;
+//         font-size: 36px;
+//         line-height: 124.5%;
+//         text-transform: uppercase;
+//         margin-bottom: 6px;
+//     }
 // }
 
 section {

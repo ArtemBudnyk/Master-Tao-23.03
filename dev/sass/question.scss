@@ -5,20 +5,21 @@
     .container {
         max-width: 1140px;
         width: 100%;
-        .template-title-2 {
+        .template-title {
             margin-bottom: 40px;
-            h2 {
-                font-size: 36px;
-                font-weight: 700;
-                line-height: 124.5%;
-                text-transform: uppercase;
-            }
+            // h2 {
+            //     font-size: 36px;
+            //     font-weight: 700;
+            //     line-height: 124.5%;
+            //     text-transform: uppercase;
+            // }
         }
     }
 
     .row {
         display: flex;
         justify-content: center;
+        align-items: start;
     }
 
     .col-accordion {
@@ -101,7 +102,7 @@
         border-radius: 20px;
         .col-form {
             padding: 38px 29px 4px;
-            height: 553px;
+            height: 555px;
             h2 {
                 font-size: 24px;
                 font-weight: 700;

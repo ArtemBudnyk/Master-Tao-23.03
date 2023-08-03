@@ -1,34 +1,32 @@
 
-.template-title,
-.template-title-2,
-.template-title-3 {
+.template-title {
     position: relative;
     text-align: center;
     padding-bottom: 18px;
     margin-bottom: 35px;
 }
 
-.template-title-2::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: calc(100% - 7px);
-    transform: translate(-50%, 0);
-    width: 85px;
-    height: 2px;
-    background-color: $bg-color-btn;
-}
+// .template-title::after {   уже не надо
+//     content: "";
+//     position: absolute;
+//     left: 50%;
+//     top: calc(100% - 7px);
+//     transform: translate(-50%, 0);
+//     width: 85px;
+//     height: 2px;
+//     background-color: $bg-color-btn;
+// }
 
-.template-title-3::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: calc(100% - 5px);
-    transform: translate(-50%, 0);
-    width: 85px;
-    height: 2px;
-    background-color: $bg-color-green;
-}
+// .template-title::after {
+//     content: "";
+//     position: absolute;
+//     left: 50%;
+//     top: calc(100% - 5px);
+//     transform: translate(-50%, 0);
+//     width: 85px;
+//     height: 2px;
+//     background-color: $bg-color-green;
+// }
 
 // для нижнего подчеркивания
 
