@@ -1,0 +1,136 @@
+.faq {
+    max-width: 6000px;            
+    width: 100%;
+    margin-bottom: 100px;
+    .container {
+        max-width: 1140px;
+        width: 100%;
+        .template-title-2 {
+            margin-bottom: 40px;
+            h2 {
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 124.5%;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-accordion {
+        padding: 0;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+
+        .accordion-item {
+            max-width: 716px;
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #3A444E;
+            margin-bottom: 18px;
+            
+
+            .accordion-header {
+                max-height: 64px;
+                height: 100%;
+            }  
+
+            .accordion-button::after {
+                width: 27px;
+                height: 27px;
+                background-image: url(assets/img/arrow-accordion-open\ 1.svg);
+                background-size: cover;
+                // transform: rotate(180 deg); Почему не работает?
+                transition: .7s;
+
+            }
+
+            .collapsed::after {
+                width: 27px;
+                height: 27px;
+                background-image: url(assets/img/arrow-accordion-close\ 1.svg);
+                background-size: cover;
+                transition: .7s;
+            }
+
+            .accordion-button {
+                border-radius: 10px;
+                background-color: #282B38;
+                color: #fff; 
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 124.5%;
+                padding-left: 34px;  
+                box-shadow: none;
+            }
+
+            .accordion-button:not(.collapsed) {
+                background-color: #fff;
+                color: #282B38;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 124.5%;
+                padding-top: 24px;
+            }
+
+            .accordion-body {
+                color: #282B38;
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 144.5%;
+                height: 96px;
+                padding: 2px 100px 21px 33px;
+            }
+        }
+    }
+
+
+
+
+    .form {
+        max-width: 390px;
+        width: 100%;
+        background-color: $bg-color-carts;
+        border-radius: 20px;
+        .col-form {
+            padding: 38px 29px 4px;
+            height: 553px;
+            h2 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 126%;
+                margin-bottom: 8px;
+            }
+
+            h3 {
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 126%;
+                margin-bottom: 23px;
+            }
+
+            input {
+                margin-bottom: 14px;
+                max-width: 310px;
+                width: 100%;
+            }
+
+            #text {
+                padding-bottom: 30px;
+            }
+
+            .btn-tao-4 {
+                margin-top: 12px;
+                max-width: 310px;
+                width: 100%;
+            }
+        } 
+    }
+}

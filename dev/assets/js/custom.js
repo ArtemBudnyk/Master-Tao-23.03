@@ -101,3 +101,11 @@ $('.multiple-items').slick ({
   slidesToScroll: 3,
   appendArrows: '.containerSelector'
 });
+
+
+
+// текст на форме
+
+// $(document).ready(function() {
+//   $('[type="fname"]').mask('Имя*');
+// })

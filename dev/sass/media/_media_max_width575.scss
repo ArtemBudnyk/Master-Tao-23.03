@@ -72,9 +72,6 @@
         }
         .slide-box {
             max-width: 335px;
-            .slide-title {
-                font-size: 22px;
-            }
 
             .slide-description {
                 font-size: 14px;
@@ -122,10 +119,10 @@
                 max-width: 335px;
                 width: 100%;
                 margin-top: -16px;
-                margin-left: 7px;
+                // margin-left: 7px;
             }
 
-            .text-2 {
+            .text:last-child {
                 margin-bottom: 40px;
                 margin-top: 0;
             }

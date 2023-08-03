@@ -44,6 +44,7 @@
     }
 
     .slide-box {
+        position: relative;
         &::before {
             content: '';
             z-index: 1;
@@ -55,16 +56,20 @@
             background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0.00) 100%);
         }
         
-        .slide-title,
-        .slide-decription,
-        .slide-btn {
-            z-index: 2;
+        .services-info {
+            position: relative;
+            z-index: 1;
         }
+
+        // .slide-title,
+        // .slide-decription,
+        // .slide-btn {
+        //     z-index: 1;
+        // }
 
         .slide-title {
             text-align: left;
             margin-left: 15px;
-            // margin-top: -10px;
             margin-top: 250px;
         }
 
