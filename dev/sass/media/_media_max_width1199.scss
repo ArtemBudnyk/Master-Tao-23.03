@@ -87,16 +87,44 @@
 
     // form
 
-  .calculation {
-    .calculation__img-box {
-        .calculation-img {
-            width: 25vw;
+    .calculation {
+        .calculation__img-box {
+            .calculation-img {
+              width: 25vw;
+            }
         }
     }
-  }
+
+    .services {
+        .slide-box {
+
+            .services-info {
+                bottom: 25px;
+            }
+
+            .slide-title {
+                font-size: 22px;
+            }
+
+            .slide-description {
+                font-size: 14px;
+            }
+        }
+   
+    }
 
 }
 
+@media screen and (max-width: 1199px) {
+
+    //faq
+    
+   .faq {
+    .form {
+        margin-left: 34px;
+    }
+   } 
+}
 
 @media screen and (max-width: 1100px) {
     .calculation {

@@ -149,7 +149,7 @@
     
     .advantages {
         .container {
-            .template-title-2  {
+            .template-title  {
                 margin-top: -61px;
                 &::after {
                     top: calc(100% - -2px);
@@ -222,7 +222,7 @@
    .row-company {
     flex-direction: column;
     max-width: 700px;
-    .template-title-3 {
+    .template-title {
         text-align: center;
         &::after {
             left: 50%;
@@ -240,6 +240,36 @@
     }
 
    }
+
+    // faq 
+
+    .faq {
+
+        .container {
+            max-width: 991px;
+            width: 100%;
+        }
+
+        .row {
+            flex-direction: column;
+            max-width: 991px;
+            width: 100%;
+            align-items: center;
+        }
+
+        .col {
+            display: flex;
+            justify-content: center;
+        }
+
+        .col-accordion {
+            max-width: 716px;
+        }
+
+        .form {
+            margin-left: 0;
+        }
+    }
 
 }
 

@@ -2,7 +2,7 @@
     .advantages {
         margin-bottom: 33px;
         .container {
-            .template-title-2  {
+            .template-title  {
                 width: 387px;
                 margin-left: -55px;
                 margin-bottom: 65px;
@@ -27,7 +27,7 @@
             max-width: 360px;  // решение слайд прилипает к левой стороне
         }
 
-        .template-title-3 {
+        .template-title {
             margin-bottom: 30px;
             h2 {
                 font-size: 24px;
@@ -59,10 +59,12 @@
 
     .services {
         padding: 0;
+        // max-width: 360px;
+
         .container {
             max-width: 360px;
-
-            .template-title-2 {
+            padding: 0;
+            .template-title {
                 margin-bottom: 35px;
                 h2 {
                     font-size: 24px;
@@ -73,14 +75,23 @@
         .slide-box {
             max-width: 335px;
 
-            .slide-description {
+            .services-info {
+                bottom: -4px;
+            }
+
+            .slide-decription {
                 font-size: 14px;
+                font-weight: 100;
+            }
+
+            .slide-btn {
+                margin-top: 2px;
             }
         }
 
         .slick-dots {
-            left: calc(50% - 90px);
-            bottom: -8%;
+            left: calc(50% - 86px);
+            bottom: -12%;
         }
 
     }
@@ -101,7 +112,7 @@
         flex-direction: column;
         max-width: 345px;
         padding: 0;
-        .template-title-3 {
+        .template-title {
             margin-top: 55px;
             &::after {
                 left: 50%;
@@ -138,6 +149,23 @@
         }
     }
 
+    .faq {
+        .container {
+            .template-title {
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .col {
+            .accordion-item {
+                .accordion-buttom {
+                    font-size: 16px;
+                    padding-right: 67px;                }
+            }
+        }
+    }
 
 
 }
