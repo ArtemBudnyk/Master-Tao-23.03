@@ -27,9 +27,9 @@
         .accordion-item {
             max-width: 716px;
             width: 100%;
-            border-radius: 12px;
+            border-radius: 10px;
             border: 1px solid #3A444E;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
 
             .accordion-header {
                 max-height: 64px;
@@ -55,7 +55,7 @@
             }
 
             .accordion-button {
-                border-radius: 10px;
+                border-radius: 8px;
                 background-color: #282B38;
                 color: #fff; 
                 font-size: 18px;
@@ -63,6 +63,8 @@
                 line-height: 124.5%;
                 padding-left: 34px;  
                 box-shadow: none;
+                padding-top: 21px;
+                padding-bottom: 16px;
             }
 
             .accordion-button:not(.collapsed) {
@@ -71,7 +73,8 @@
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 124.5%;
-                padding-top: 24px;
+                padding-top: 18px;
+                padding-bottom: 10px;
             }
 
             .accordion-body {
@@ -80,7 +83,7 @@
                 font-weight: 300;
                 line-height: 144.5%;
                 // height: 96px;
-                // padding: 2px 100px 21px 33px;
+                padding: 0px 100px 21px 33px;
             }
         }
     }

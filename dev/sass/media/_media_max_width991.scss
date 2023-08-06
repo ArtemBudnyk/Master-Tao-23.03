@@ -248,6 +248,11 @@
         .container {
             max-width: 991px;
             width: 100%;
+            .template-title {
+                display: flex;
+                // align-items: center;
+                justify-content: center;
+            }
         }
 
         .row {
@@ -255,6 +260,7 @@
             max-width: 991px;
             width: 100%;
             align-items: center;
+            margin: 0;
         }
 
         .col {
@@ -264,6 +270,9 @@
 
         .col-accordion {
             max-width: 716px;
+            width: 100%;
+            margin-bottom: 25px;
+            align-items: center;
         }
 
         .form {
