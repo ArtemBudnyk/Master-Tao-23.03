@@ -1,0 +1,88 @@
+.cooperation {
+
+    .container {
+        max-width: 1140px;
+        width: 100%;
+        .template-title {
+            margin-left: 20px;
+            text-align: center;
+            margin-bottom: 88px;
+            &::after {
+                left: 49%;
+                top: calc(100% - 1px);
+            }
+
+            h2 {
+                margin-left: -25px;
+            }
+
+            h5 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 124.5%;
+                margin-left: -20px;
+            }
+        }
+    }
+
+    .row:last-child {
+        margin-top: 10px;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-text {
+        margin-left: -42px;
+        margin-top: -2px;
+        margin-right: 15px;
+
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            margin-bottom: 27px;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 156.5%;
+        }
+
+        .btn-tao-5 {
+            margin-top: 15px;
+            &:hover {
+                border: $bg-color-words;
+                background-color: $bg-color-green;
+            }
+        }
+    }
+
+    .col-text:last-child {
+        margin-left: -57px;
+        margin-top: 23px;
+    }
+
+    .col-img {
+        margin-top: -25px;
+        img {
+            max-width: 635px;
+        }
+
+        .cargo-img {
+            margin-right: -55px;
+        }
+
+        .auto-img {
+            margin-left: -45px;
+        }
+    
+    }
+
+
+    // .col-img:first-child {      чего не робэ?
+    //     margin-right: -55px;
+    // }
+  
+}

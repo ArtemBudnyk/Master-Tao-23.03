@@ -119,11 +119,22 @@
 
     //faq
     
-   .faq {
-    .form {
-        margin-left: 34px;
+    .faq {
+        .form {
+            margin-left: 34px;
     }
    } 
+
+   // cooperation 
+
+    .cooperation {
+        .col-img {
+            img {
+                max-width: 700px;
+                width: 100%;
+            }
+        }
+   }
 }
 
 @media screen and (max-width: 1100px) {
@@ -134,4 +145,12 @@
             }
         }
     }    
+
+    .about-company {
+        .col  {
+            img {
+                margin-top: 150px;
+            }
+        }
+    }
 }

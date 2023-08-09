@@ -1,7 +1,7 @@
 .faq {
     max-width: 6000px;            
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 103px;
     .container {
         max-width: 1140px;
         width: 100%;
@@ -41,7 +41,7 @@
                 height: 27px;
                 background-image: url(assets/img/arrow-accordion-open\ 1.svg);
                 background-size: cover;
-                // transform: rotate(180 deg); Почему не работает?
+                // transform: rotate(180deg);
                 transition: .7s;
 
             }
@@ -51,6 +51,7 @@
                 height: 27px;
                 background-image: url(assets/img/arrow-accordion-close\ 1.svg);
                 background-size: cover;
+                // transform: rotate(180deg);
                 transition: .7s;
             }
 
@@ -115,7 +116,8 @@
 
             input {
                 margin-bottom: 14px;
-                max-width: 310px;
+                // max-width: 310px; было 
+                max-width: 350px;
                 width: 100%;
             }
 
@@ -127,6 +129,10 @@
                 margin-top: 12px;
                 max-width: 310px;
                 width: 100%;
+                &:hover {
+                    border: $bg-color-words;
+                    background-color: $bg-color-green;
+                }
             }
         } 
     }
